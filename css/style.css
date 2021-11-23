@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+body {
+  background-color: #F3F5FB;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,19 +65,19 @@
   line-height: 1.125em;
 }
 
-main {
-  background-color: orchid;
-}
-
 .counter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 100vw;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .counter .counterCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
@@ -84,7 +88,7 @@ main {
   color: var(--myBlack);
   position: absolute;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 32px;
   line-height: 3em;
 }
 
@@ -96,27 +100,25 @@ main {
 }
 
 .counter .leftCounter {
-  background-color: #e9e98e;
   position: relative;
   width: 36.24070021881838vw;
   min-height: 15.778014941302027vh;
 }
 
 .counter .leftCounter .counterDivider img {
-  background-color: black;
   position: absolute;
   width: 1.0893246187363834vw;
   height: 7.383561643835617vh;
-  left: 18.052287581699346vw;
+  left: 165.72px;
   top: 4.794520547945205vh;
+  margin-left: auto;
 }
 
 .counter .leftCounter .counterIcon img {
   position: absolute;
-  width: 8.752735229759299vw;
-  height: 8.537886872998932vh;
-  left: 4.673960612691466vw;
-  top: 3.6072572038420487vh;
+  width: 80px;
+  height: 80px;
+  left: 4.649890590809628vw;
 }
 
 .counter .leftCounter .leftCouterText p:nth-child(2) {
@@ -124,26 +126,24 @@ main {
   width: 7.111597374179431vw;
   height: 3.2017075773746vh;
   left: 23.49234135667396vw;
+  top: -4.461045891141942vh;
 }
 
 .counter .leftCounter .leftCouterText p:nth-child(1) {
-  background-color: yellow;
   position: absolute;
   width: 6.892778993435448vw;
   height: 5.122732123799359vh;
   left: 23.601750547045953vw;
-  top: 4.461045891141942vh;
+  top: 8.729989327641409vh;
 }
 
 .counter .centerCounter {
-  background-color: #df9e9e;
   position: relative;
   width: 36.24070021881838vw;
   min-height: 15.778014941302027vh;
 }
 
 .counter .centerCounter .counterDivider img {
-  background-color: black;
   position: absolute;
   width: 1.0893246187363834vw;
   height: 7.383561643835617vh;
@@ -153,36 +153,33 @@ main {
 
 .counter .centerCounter .counterIcon img {
   position: absolute;
-  width: 8.752735229759299vw;
-  height: 8.537886872998932vh;
-  left: 4.673960612691466vw;
-  top: 3.6072572038420487vh;
+  width: 80px;
+  height: 80px;
+  left: 4.649890590809628vw;
 }
 
 .counter .centerCounter .centerCounterText p:nth-child(2) {
-  background-color: red;
   position: absolute;
   width: 4.7789934354485775vw;
-  height: 5.122732123799359vh;
+  height: 3.2273212379935967vh;
   left: 23.49234135667396vw;
+  top: -4.461045891141942vh;
 }
 
 .counter .centerCounter .centerCounterText p:nth-child(1) {
   position: absolute;
   width: 7.330415754923414vw;
   left: 23.49234135667396vw;
-  top: 4.461045891141942vh;
+  top: 8.729989327641409vh;
 }
 
 .counter .RightCounter {
-  background-color: #9be09b;
   position: relative;
   width: 36.24070021881838vw;
   min-height: 15.778014941302027vh;
 }
 
 .counter .RightCounter .counterDivider img {
-  background-color: black;
   position: absolute;
   width: 1.0893246187363834vw;
   height: 7.383561643835617vh;
@@ -192,23 +189,24 @@ main {
 
 .counter .RightCounter .counterIcon img {
   position: absolute;
-  width: 8.752735229759299vw;
-  height: 8.537886872998932vh;
+  width: 80px;
+  height: 80px;
   left: 4.649890590809628vw;
-  top: 3.6072572038420487vh;
 }
 
 .counter .RightCounter .rightCouterText p:nth-child(2) {
+  text-align: center;
   position: absolute;
   width: 9.741794310722101vw;
   height: 3.2273212379935967vh;
   left: 22.271334792122538vw;
+  top: -4.426894343649947vh;
 }
 
 .counter .RightCounter .rightCouterText p:nth-child(1) {
-  background-color: #399b39;
+  text-align: center;
   width: 8.643326039387308vw;
-  left: 22.271334792122538vw;
+  left: 22.771334792122538vw;
   top: 8.729989327641409vh;
 }
 
