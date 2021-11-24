@@ -543,6 +543,171 @@ aside .excerciseCard img {
   margin-left: auto;
 }
 
+.circularAndPerformer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 33.6px;
+}
+
+.circularAndPerformer .circularGraphSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
+  width: 100%;
+  height: 42vh;
+  padding: 33.6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 3.77px;
+}
+
+.circularAndPerformer .topPerformer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.0073px;
+  width: 100%;
+  height: 42vh;
+  padding: 33.6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.circularAndPerformer .topPerformer .performerTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.circularAndPerformer .topPerformer .performerTitles h6 {
+  color: var(--fontDarkGray);
+  font-weight: 600;
+  font-size: 16.8px;
+  line-height: 25px;
+  margin-right: auto;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .kidCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 19.32px;
+  height: 30vh;
+  position: relative;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .kidCard button {
+  border-radius: 10.92px;
+  border: none;
+  height: 5vh;
+  width: 9vw;
+  margin-bottom: 10.46px;
+  margin-top: auto;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .kidCard p:nth-child(2n+1) {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 15.12px;
+  line-height: 23px;
+  margin-bottom: 6.72px;
+  margin-top: 14.28px;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .kidCard p:nth-child(2n) {
+  font-weight: 500;
+  font-size: 10.08px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 14.28px;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .nivaan {
+  background-color: var(--myDarkPink);
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .nivaan button {
+  background: rgba(255, 255, 255, 0.53);
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .navya {
+  background-color: var(--myBlue);
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .navya button {
+  background: rgba(255, 255, 255, 0.53);
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .anugrah {
+  background-color: var(--myLightPink);
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .anugrah button {
+  background: rgba(255, 255, 255, 0.53);
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .kidCard img:nth-child(2n+1) {
+  position: absolute;
+  right: 1.42%;
+  top: 0;
+  bottom: 8.32%;
+}
+
+.circularAndPerformer .topPerformer .kidsArticles .kidCard img:nth-child(2n) {
+  margin-top: 16.42px;
+  width: 41.16px;
+  height: 41.16px;
+}
+
 @media (max-width: 1200px) {
   .counterCard:nth-child(1) {
     margin-right: auto;
@@ -556,6 +721,12 @@ aside .excerciseCard img {
   }
   .batchPerformance {
     margin-top: 33.6px;
+  }
+  .topPerformer {
+    margin-top: 33.6px;
+  }
+  .kidCard {
+    width: 20vw;
   }
 }
 
@@ -621,6 +792,15 @@ aside .excerciseCard img {
   }
   .batchPerformance {
     width: 40vw;
+  }
+  .kidCard {
+    width: 10vw;
+  }
+  .circularAndPerformer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=new.css.map */
