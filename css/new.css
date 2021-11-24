@@ -932,7 +932,7 @@ aside .excerciseCard p {
             flex-direction: column-reverse;
   }
   .batchPerformance .performanceGraph .linearGraphText {
-    margin-top: 10px;
+    margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -957,8 +957,11 @@ aside .excerciseCard p {
         -ms-flex-align: center;
             align-items: center;
   }
+  .circularGraph .graph {
+    margin-bottom: 10px;
+  }
   .circularGraph .circularText .graphSideText {
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .circularGraph .transforemBox {
     text-align: left;

@@ -728,7 +728,7 @@ aside {
             flex-direction: column-reverse;
 
             .linearGraphText {
-                margin-top: 10px;
+                margin-top: 20px;
                 display: flex;
                 flex-direction: row;
                 text-align: center;
@@ -745,10 +745,14 @@ aside {
         flex-direction: column-reverse;
         align-items: center;
 
+        .graph{
+            margin-bottom: 10px;
+        }
+
         .circularText {
 
             .graphSideText {
-                margin-top: 10px;
+                margin-top: 20px;
             }
         }
 
