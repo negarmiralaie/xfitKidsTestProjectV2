@@ -4,7 +4,11 @@
     --myGray: #cccccc;
     --myBlack: #000000;
     --fontGray: #999999;
+    --fontDarkGray: #393D54;
+    --fontLightGray: #BFBFBF;
     --bgColor: #f3f5fb;
+    --myDarkPink: #F1554C;
+    --myLightPink: #FFA5A0;
 }
 
 * {
@@ -229,7 +233,7 @@ aside {
     .counterCard {
         display: flex;
         position: relative;
-        background: #ffffff;
+        background: var(--myWhite);
         text-align: center;
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
         border-radius: 25.2px;
@@ -285,10 +289,111 @@ aside {
     }
 }
 
+.statusAndPerforamnce {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+    .batchPerformance {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        // align-items: center;
+        // justify-content: center;
+        padding: 37.8px 33.6px 38.64px 33.6px;
+        background: var(--myWhite);
+        box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+        border-radius: 25.2px;
+
+        .performanceTextSec {
+            display: flex;
+
+            h4 {
+                color: var(--fontDarkGray);
+                font-weight: 600;
+                font-size: 16.8px;
+                line-height: 25px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            p {
+                color: var(--fontGray);
+                font-weight: 500;
+                font-size: 13.44px;
+                line-height: 20px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+            }
+        }
+
+        .performanceGraph {
+            display: flex;
+
+            .linearGraphText {
+                display: flex;
+                flex-direction: column;
+
+                .sideText {
+                    margin-top: auto;
+                    display: flex;
+                    align-items: flex-start;
+
+                    section p:first-child {
+                        font-weight: 500;
+                        font-size: 15.12px;
+                        line-height: 23px;
+                        color: var(--fontDarkGray);
+                    }
+
+                    section p:nth-child(2) {
+                        font-weight: 500;
+                        font-size: 11.76px;
+                        line-height: 18px;
+                        color: var(--fontLightGray);
+                    }
+
+                    img {
+                        margin-right: 6.72px;
+                    }
+                }
+
+                section p:first-child {
+                    // background-color: rosybrown;
+                    font-weight: 500;
+                    font-size: 15.12px;
+                    line-height: 23px;
+                    // margin-bottom: 16.8px;
+                }
+
+                section p:nth-child(2) {
+                    // background-color: seagreen;
+                    font-weight: 500;
+                    font-size: 11.76px;
+                    line-height: 18px;
+                    // margin-bottom: auto;
+                }
+            }
+
+            .linearGraph {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
 
     .counterCard:nth-child(n) {
-        width: 100%;
+        width: 95%;
+        // margin-right: auto;
     }
 
     .counterCard:nth-child(1) {
@@ -302,6 +407,12 @@ aside {
 
     .xfitKids {
         display: none;
+    }
+
+    .batchPerformance {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -353,6 +464,14 @@ aside {
         .counterCard:nth-child(3) {
             margin-right: 0;
             margin-left: auto;
+        }
+    }
+
+    .statusAndPerforamnce {
+        flex-direction: row;
+
+        .batchPerformance {
+            width: 40vw;
         }
     }
 }

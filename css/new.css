@@ -4,7 +4,11 @@
   --myGray: #cccccc;
   --myBlack: #000000;
   --fontGray: #999999;
+  --fontDarkGray: #393D54;
+  --fontLightGray: #BFBFBF;
   --bgColor: #f3f5fb;
+  --myDarkPink: #F1554C;
+  --myLightPink: #FFA5A0;
 }
 
 * {
@@ -259,7 +263,7 @@ aside .excerciseCard img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #ffffff;
+  background: var(--myWhite);
   text-align: center;
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
@@ -315,9 +319,120 @@ aside .excerciseCard img {
   margin-bottom: auto;
 }
 
+.statusAndPerforamnce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statusAndPerforamnce .batchPerformance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 37.8px 33.6px 38.64px 33.6px;
+  background: var(--myWhite);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceTextSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceTextSec h4 {
+  color: var(--fontDarkGray);
+  font-weight: 600;
+  font-size: 16.8px;
+  line-height: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceTextSec p {
+  color: var(--fontGray);
+  font-weight: 500;
+  font-size: 13.44px;
+  line-height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText .sideText {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText .sideText section p:first-child {
+  font-weight: 500;
+  font-size: 15.12px;
+  line-height: 23px;
+  color: var(--fontDarkGray);
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText .sideText section p:nth-child(2) {
+  font-weight: 500;
+  font-size: 11.76px;
+  line-height: 18px;
+  color: var(--fontLightGray);
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText .sideText img {
+  margin-right: 6.72px;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText section p:first-child {
+  font-weight: 500;
+  font-size: 15.12px;
+  line-height: 23px;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText section p:nth-child(2) {
+  font-weight: 500;
+  font-size: 11.76px;
+  line-height: 18px;
+}
+
+.statusAndPerforamnce .batchPerformance .performanceGraph .linearGraph {
+  margin-left: auto;
+}
+
 @media (max-width: 1200px) {
   .counterCard:nth-child(n) {
-    width: 100%;
+    width: 95%;
   }
   .counterCard:nth-child(1) {
     margin-right: auto;
@@ -328,6 +443,11 @@ aside .excerciseCard img {
   }
   .xfitKids {
     display: none;
+  }
+  .batchPerformance {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -380,6 +500,15 @@ aside .excerciseCard img {
   .counter .counterCard:nth-child(3) {
     margin-right: 0;
     margin-left: auto;
+  }
+  .statusAndPerforamnce {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .statusAndPerforamnce .batchPerformance {
+    width: 40vw;
   }
 }
 /*# sourceMappingURL=new.css.map */
