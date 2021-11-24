@@ -507,12 +507,17 @@ aside {
             justify-content: space-between;
             margin-bottom: 29px;
 
+            .graphSideText{
+                display: flex;
+                flex-direction: column;
+            }
+
             .childTextSec {
                 display: flex;
                 align-items: flex-start;
-                height: 35%;
+                height: 19%;
                 justify-content: center;
-                align-items: flex-end;
+                margin-top: auto;
 
                 img {
                     margin-right: 7.66px;

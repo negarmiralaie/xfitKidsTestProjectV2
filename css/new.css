@@ -652,6 +652,16 @@ aside .excerciseCard p {
   margin-bottom: 29px;
 }
 
+.circularAndPerformer .circularGraphSec .circularGraph .graphSideText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .circularAndPerformer .circularGraphSec .circularGraph .childTextSec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,13 +669,11 @@ aside .excerciseCard p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  height: 35%;
+  height: 19%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  margin-top: auto;
 }
 
 .circularAndPerformer .circularGraphSec .circularGraph .childTextSec img {
