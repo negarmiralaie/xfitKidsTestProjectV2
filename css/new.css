@@ -513,6 +513,9 @@ aside .excerciseCard p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 37.8px 33.6px 38.64px 33.6px;
   min-height: 32vh;
 }
@@ -521,6 +524,7 @@ aside .excerciseCard p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: auto;
 }
 
 .statusAndPerforamnce .batchPerformance .performanceTextSec h4 {
@@ -528,8 +532,6 @@ aside .excerciseCard p {
   font-weight: 600;
   font-size: 16.8px;
   line-height: 25px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .statusAndPerforamnce .batchPerformance .performanceTextSec p {
@@ -546,6 +548,7 @@ aside .excerciseCard p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: auto;
 }
 
 .statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText {
@@ -631,9 +634,9 @@ aside .excerciseCard p {
   width: 100%;
   min-height: 42vh;
   padding: 33.6px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 3.77px;
   -webkit-transform: rotate(-6.69deg);
           transform: rotate(-6.69deg);
@@ -896,7 +899,73 @@ aside .excerciseCard p {
   height: 41.16px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
+  aside {
+    display: none;
+  }
+  .batchPerformance {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .batchPerformance .performanceTextSec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .batchPerformance .performanceGraph {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .batchPerformance .performanceGraph .linearGraphText {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .circularGraphSec {
+    text-align: center;
+  }
+  .circularGraph {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .circularGraph .circularText .graphSideText {
+    margin-top: 10px;
+  }
+  .circularGraph .transforemBox {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 1200px) {
   .toggleIcon {
     width: 10px;
   }
@@ -978,7 +1047,7 @@ aside .excerciseCard p {
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 600px) and (min-width: 1200px) {
   nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
