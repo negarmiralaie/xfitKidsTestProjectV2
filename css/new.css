@@ -563,8 +563,8 @@ aside .excerciseCard img {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
   border-radius: 25.2px;
   width: 100%;
   height: 42vh;
@@ -702,8 +702,8 @@ aside .excerciseCard img {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
   border-radius: 25.0073px;
   width: 100%;
   min-height: 42vh;
