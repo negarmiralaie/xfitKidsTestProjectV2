@@ -318,15 +318,15 @@ aside .excerciseCard p {
 }
 
 .counter .counterCard {
+  background: var(--myWhite);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: var(--myWhite);
   text-align: center;
-  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-  border-radius: 25.2px;
   height: 14vh;
   width: 100%;
   -webkit-box-align: center;
@@ -387,6 +387,10 @@ aside .excerciseCard p {
 }
 
 .statusAndPerforamnce .todayStatus {
+  background: var(--myWhite);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,10 +398,6 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: var(--myWhite);
-  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-  border-radius: 25.2px;
   width: 100%;
   min-height: 32vh;
   padding: 33.6px;
@@ -497,6 +497,10 @@ aside .excerciseCard p {
 }
 
 .statusAndPerforamnce .batchPerformance {
+  background: var(--myWhite);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,12 +508,9 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   text-align: center;
   padding: 37.8px 33.6px 38.64px 33.6px;
-  background: var(--myWhite);
-  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-  border-radius: 25.2px;
   min-height: 32vh;
 }
 
@@ -611,6 +612,10 @@ aside .excerciseCard p {
 }
 
 .circularAndPerformer .circularGraphSec {
+  background: var(--myWhite);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,10 +623,8 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: var(--myWhite);
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
-  border-radius: 25.2px;
   width: 100%;
   min-height: 42vh;
   padding: 33.6px;
@@ -750,6 +753,10 @@ aside .excerciseCard p {
 }
 
 .circularAndPerformer .topPerformer {
+  background: var(--myWhite);
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,10 +764,6 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: var(--myWhite);
-  -webkit-box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
-  border-radius: 25.0073px;
   width: 100%;
   min-height: 42vh;
   padding: 33.6px;

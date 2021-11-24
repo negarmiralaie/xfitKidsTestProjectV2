@@ -11,6 +11,12 @@
     --myLightPink: #FFA5A0;
 }
 
+@mixin mainCardStyle {
+    background: var(--myWhite);
+    box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+    border-radius: 25.2px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -265,12 +271,10 @@ aside {
     margin: 33.6px 0;
 
     .counterCard {
+        @include mainCardStyle;
         display: flex;
         position: relative;
-        background: var(--myWhite);
         text-align: center;
-        box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-        border-radius: 25.2px;
         height: 14vh;
         width: 100%;
         align-items: center;
@@ -319,15 +323,12 @@ aside {
     flex-direction: column;
 
     .todayStatus {
+        @include mainCardStyle;
         display: flex;
         flex-direction: column;
-        background: var(--myWhite);
-        box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-        border-radius: 25.2px;
         width: 100%;
         min-height: 32vh;
         padding: 33.6px;
-        // this can be a mixin
         justify-content: space-between;
         margin-right: 29.4px;
 
@@ -395,13 +396,12 @@ aside {
     }
 
     .batchPerformance {
+        @include mainCardStyle;
         display: flex;
         flex-direction: column;
+        width: 100%;
         text-align: center;
         padding: 37.8px 33.6px 38.64px 33.6px;
-        background: var(--myWhite);
-        box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
-        border-radius: 25.2px;
         min-height: 32vh;
 
         .performanceTextSec {
@@ -485,11 +485,10 @@ aside {
     margin-top: 33.6px;
 
     .circularGraphSec {
+        @include mainCardStyle;
         display: flex;
         flex-direction: column;
-        background: var(--myWhite);
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
-        border-radius: 25.2px;
         width: 100%;
         min-height: 42vh;
         padding: 33.6px;
@@ -593,15 +592,12 @@ aside {
                 color: var(--fontDarkGray);
             }
         }
-
     }
 
     .topPerformer {
+        @include mainCardStyle;
         display: flex;
         flex-direction: column;
-        background: var(--myWhite);
-        box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
-        border-radius: 25.0073px;
         width: 100%;
         min-height: 42vh;
         padding: 33.6px;
@@ -816,7 +812,7 @@ aside {
             }
 
             .toggleIcon,
-            .toggleLogo{
+            .toggleLogo {
                 display: none;
             }
         }
