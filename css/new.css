@@ -45,6 +45,7 @@ body {
 }
 
 nav {
+  position: relative;
   width: 100%;
   padding: 33.6px;
   margin-left: auto;
@@ -72,6 +73,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 nav .navSearchBar {
@@ -96,7 +98,27 @@ nav .navSearchBar img {
   left: 5%;
 }
 
-nav .navIcons {
+nav .mainNav {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+nav .navWrapper .mainNav {
+  display: none;
+}
+
+nav .navWrapper .mainNav .toggleIcon,
+nav .navWrapper .mainNav .toggleLogo {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,6 +885,60 @@ aside .excerciseCard p {
 }
 
 @media (max-width: 1200px) {
+  .toggleIcon {
+    width: 10px;
+  }
+  .toggleLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+    padding: 1.5rem 0;
+  }
+  .menu {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .menu .toggleIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .menu:hover .mainNav {
+    position: absolute;
+    top: 8vh;
+    right: -3vw;
+    width: 75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    z-index: 2;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 1rem;
+    -webkit-box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+    border-radius: 20.16px;
+  }
+  .menu:hover .mainNav input[type=search] {
+    margin: 1rem 0;
+  }
+  .menu:hover .mainNav .navIcons img:nth-child(1) {
+    margin-right: 5px;
+  }
+  .menu:hover .mainNav .navIcons img:nth-child(2) {
+    margin-left: 5px;
+  }
   aside .excerciseCard {
     display: none;
   }
@@ -902,6 +978,26 @@ aside .excerciseCard p {
   }
   nav .navIcons img {
     margin-left: 50.32px;
+  }
+  nav .navWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 10vh;
+  }
+  nav .navWrapper .menu {
+    width: 100%;
+  }
+  nav .navWrapper .menu .mainNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  nav .navWrapper .toggleIcon,
+  nav .navWrapper .toggleLogo {
+    display: none;
   }
   aside {
     display: -webkit-box;

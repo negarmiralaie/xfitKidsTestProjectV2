@@ -37,6 +37,7 @@ body {
 }
 
 nav {
+    position: relative;
     width: 100%;
     padding: 33.6px;
     margin-left: auto;
@@ -54,6 +55,7 @@ nav {
     color: var(--myBlue);
     justify-content: center;
     align-items: center;
+    height: 100%;
 
     .navSearchBar {
         position: relative;
@@ -76,8 +78,26 @@ nav {
         }
     }
 
-    .navIcons {
+
+
+    .mainNav {
+        width: 100%;
+        align-items: center;
+    }
+
+    .navWrapper {
         display: flex;
+        width: 100%;
+
+        .mainNav {
+            display: none;
+
+            .toggleIcon,
+            .toggleLogo {
+                background-color: red;
+                display: flex;
+            }
+        }
     }
 }
 
@@ -689,11 +709,60 @@ aside {
 
 @media (max-width: 1200px) {
 
+    .toggleIcon {
+        width: 10px;
+    }
+
+    .toggleLogo {
+        display: flex;
+        margin-right: auto;
+        filter: brightness(0%);
+        padding: 1.5rem 0;
+    }
+
+    .menu {
+        cursor: pointer;
+        display: flex;
+        position: relative;
+
+        .toggleIcon {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    .menu:hover .mainNav {
+        position: absolute;
+        top: 8vh;
+        right: -3vw;
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        z-index: 2;
+        align-items: center;
+        padding: 1rem 1rem;
+        box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+        border-radius: 20.16px;
+
+        input[type=search] {
+            margin: 1rem 0;
+        }
+
+        .navIcons img:nth-child(1) {
+            margin-right: 5px;
+        }
+
+        .navIcons img:nth-child(2) {
+            margin-left: 5px;
+        }
+    }
+
     aside .excerciseCard {
         display: none;
     }
-    
-    .logo{
+
+    .logo {
         margin-left: 0;
     }
 
@@ -734,6 +803,26 @@ aside {
 
         .navIcons img {
             margin-left: 50.32px;
+        }
+
+        .navWrapper {
+            display: flex;
+            height: 10vh;
+
+            .menu {
+                width: 100%;
+
+                .mainNav {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .toggleIcon,
+            .toggleLogo{
+                display: none;
+            }
         }
     }
 
