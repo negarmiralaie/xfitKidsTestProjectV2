@@ -81,8 +81,6 @@ nav {
     }
 
     .navIcons {
-        // align-items: center;
-        // justify-content: center;
         display: flex;
     }
 }
@@ -205,25 +203,54 @@ aside {
     }
 
     .excerciseCard {
+        position: absolute;
+        width: 165.48px;
+        height: 162.96px;
+        left: 33.6px;
+        top: 808.92px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
+        border-radius: 27.72px;
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        background-color: white;
-        margin: auto auto 2rem auto;
-        border-radius: 20px;
-        padding: 1rem;
-        width: 70%;
-        height: 30vh;
-        display: none;
     }
 
-    .excerciseCard i {
-        margin-left: auto;
+    .excerciseCard img:nth-child(1) {
+        // background-color: var(--myLightPink);
+        position: absolute;
+        left: 41.67%;
+        right: 41.67%;
+        top: 14.67%;
+        bottom: 16.67%;
     }
 
-    .excerciseCard img {
-        width: 50%;
-        height: 50%;
-        margin: auto auto;
+    .excerciseCard img:nth-child(2) {
+        // background-color: var(--fontGray);
+        position: absolute;
+        width: 116px;
+        height: 74px;
+        // top: -30%;
+        // left: -20%;
+        bottom: 30%;
+        right: 23%;
+    }
+
+    .excerciseCard p {
+        position: absolute;
+        width: 110.88px;
+        height: 17.64px;
+        // left: 61.32px;
+        // top: 928.2px;
+        top: 75%;
+        left: 17%;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.76px;
+        line-height: 18px;
+        color: var(--fontDarkGray);
     }
 }
 
@@ -690,10 +717,9 @@ aside {
 
 @media (max-width: 1200px) {
 
-    // .counterCard:nth-child(n) {
-    //     width: 95%;
-    //     // margin-right: auto;
-    // }
+    aside .excerciseCard {
+        display: none;
+    }
 
     .counterCard:nth-child(1) {
         margin-right: auto;
@@ -791,5 +817,9 @@ aside {
 
     .circularAndPerformer {
         flex-direction: row;
+    }
+
+    .excerciseCard {
+        display: flex;
     }
 }
