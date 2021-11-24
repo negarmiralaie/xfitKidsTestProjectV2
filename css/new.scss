@@ -432,19 +432,15 @@ aside {
                 }
 
                 section p:first-child {
-                    // background-color: rosybrown;
                     font-weight: 500;
                     font-size: 15.12px;
                     line-height: 23px;
-                    // margin-bottom: 16.8px;
                 }
 
                 section p:nth-child(2) {
-                    // background-color: seagreen;
                     font-weight: 500;
                     font-size: 11.76px;
                     line-height: 18px;
-                    // margin-bottom: auto;
                 }
             }
 
@@ -471,7 +467,117 @@ aside {
         padding: 33.6px;
         justify-content: space-between;
         margin-right: 3.77px;
-        // transform: rotate(-6.69deg);
+        transform: rotate(-6.69deg);
+
+
+        .circularText p {
+            font-weight: 600;
+            font-size: 16.8px;
+            line-height: 25px;
+            color: var(--fontDarkGray);
+        }
+
+        .circularGraph {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 29px;
+
+            .childTextSec {
+                display: flex;
+                align-items: flex-start;
+                height: 35%;
+                justify-content: center;
+                align-items: flex-end;
+
+                img {
+                    margin-right: 7.66px;
+                }
+
+                .textSec p:nth-child(2n+1) {
+                    color: var(--fontDarkGray);
+                    font-weight: 500;
+                    font-size: 13.44px;
+                    line-height: 20px;
+                }
+
+                .textSec p:nth-child(2n) {
+                    font-weight: 600;
+                    font-size: 11.76px;
+                    line-height: 18px;
+                    color: #cfcfcf;
+                }
+
+                span {
+                    color: var(--fontDarkGray);
+                    font-weight: 500;
+                    font-size: 11.76px;
+                    line-height: 18px;
+                }
+            }
+
+            .childTextSec:nth-child(1){
+                // margin-bottom: auto;
+            }
+
+            .childTextSec:nth-child(3){
+                // margin-top: auto;
+            }
+        }
+
+        .graph {
+            position: relative;
+
+            .transforemBox {
+                position: absolute;
+                width: 149.79px;
+                height: 75.66px;
+                // left: 473.76px;
+                // top: 845.04px;
+                // right: 10%;
+                left: -12%;
+                top: 72%;
+
+                background: #FFFFFF;
+                box-shadow: 0px 3.36px 26.04px rgba(0, 0, 0, 0.1);
+                border-radius: 6.72px;
+                transform: rotate(-6.69deg);
+                padding: 8.43px;
+                display: flex;
+                flex-direction: column;
+
+                .transforemBoxBottomPart {
+                    display: flex;
+
+                    p {
+                        color: #cfcfcf;
+                        font-weight: 600;
+                        font-size: 11.76px;
+                        line-height: 18px;
+                    }
+
+                    img {
+                        margin-right: auto;
+                        margin-left: 2.5px;
+                    }
+
+                }
+            }
+
+            .transforemBox .number {
+                font-weight: 800;
+                font-size: 20.16px;
+                line-height: 30px;
+                color: var(--fontDarkGray);
+            }
+
+            .transforemBox p:nth-child(2n) {
+                font-weight: 600;
+                font-size: 10.08px;
+                line-height: 15px;
+                color: var(--fontDarkGray);
+            }
+        }
+
     }
 
     .topPerformer {
@@ -481,7 +587,7 @@ aside {
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
         border-radius: 25.0073px;
         width: 100%;
-        height: 42vh;
+        min-height: 42vh;
         padding: 33.6px;
         justify-content: space-between;
         display: flex;
@@ -509,7 +615,7 @@ aside {
                 display: flex;
                 flex-direction: column;
                 border-radius: 19.32px;
-                height: 30vh;
+                min-height: 30vh;
                 position: relative;
                 text-align: center;
                 align-items: center;
@@ -606,11 +712,11 @@ aside {
         margin-top: 33.6px;
     }
 
-    .topPerformer{
+    .topPerformer {
         margin-top: 33.6px;
     }
 
-    .kidCard{
+    .kidCard {
         width: 20vw;
     }
 }
@@ -679,7 +785,7 @@ aside {
         width: 40vw;
     }
 
-    .kidCard{
+    .kidCard {
         width: 10vw;
     }
 
