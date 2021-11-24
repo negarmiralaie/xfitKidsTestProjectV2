@@ -41,10 +41,14 @@ body {
           flex-direction: column;
   margin-right: 33.6px;
   margin-left: 33.6px;
+  width: 95%;
 }
 
 nav {
-  width: 77.68vw;
+  width: 100%;
+  padding: 33.6px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,10 +272,8 @@ aside .excerciseCard img {
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
   border-radius: 25.2px;
-  width: 28vw;
   height: 14vh;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -320,6 +322,116 @@ aside .excerciseCard img {
 }
 
 .statusAndPerforamnce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statusAndPerforamnce .todayStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+  border-radius: 25.2px;
+  width: 100%;
+  height: 32vh;
+  padding: 33.6px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 29.4px;
+}
+
+.statusAndPerforamnce .todayStatus h3 {
+  font-weight: 600;
+  font-size: 16.8px;
+  line-height: 25px;
+  color: var(--fontDarkGray);
+}
+
+.statusAndPerforamnce .todayStatus .statusCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.statusAndPerforamnce .todayStatus .statusCards .statusCard {
+  background: #F9F9F9;
+  border-radius: 8.4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 8vw;
+  min-height: 9vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.statusAndPerforamnce .todayStatus .statusCards .statusCard p:first-child {
+  color: var(--myBlue);
+  font-weight: 800;
+  font-size: 20.16px;
+  line-height: 30px;
+  margin-bottom: 5.88px;
+}
+
+.statusAndPerforamnce .todayStatus .statusCards .statusCard p:nth-child(2) {
+  font-weight: 600;
+  font-size: 11.76px;
+  line-height: 18px;
+  color: var(--fontDarkGray);
+}
+
+.statusAndPerforamnce .todayStatus .filthySec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 29vw;
+  height: 9vh;
+  width: 100%;
+  background: #F9F9F9;
+  border-radius: 8.4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: solid 20px var(--myDarkPink);
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.statusAndPerforamnce .todayStatus .filthySec .rightFilthy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,6 +506,7 @@ aside .excerciseCard img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: start;
 }
 
 .statusAndPerforamnce .batchPerformance .performanceGraph .linearGraphText .sideText section p:first-child {
@@ -431,9 +544,6 @@ aside .excerciseCard img {
 }
 
 @media (max-width: 1200px) {
-  .counterCard:nth-child(n) {
-    width: 95%;
-  }
   .counterCard:nth-child(1) {
     margin-right: auto;
     margin-bottom: 33.6px;
@@ -445,9 +555,7 @@ aside .excerciseCard img {
     display: none;
   }
   .batchPerformance {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 33.6px;
   }
 }
 
@@ -489,17 +597,18 @@ aside .excerciseCard img {
             flex-direction: row;
   }
   .counter .counterCard {
-    width: 24vw;
+    width: 26.28vw;
     margin-top: auto;
     margin-bottom: auto;
   }
   .counter .counterCard:nth-child(1) {
     margin-left: 0;
-    margin-right: auto;
+    margin-right: 25.76px;
   }
   .counter .counterCard:nth-child(3) {
     margin-right: 0;
     margin-left: auto;
+    margin-left: 24.92px;
   }
   .statusAndPerforamnce {
     -webkit-box-orient: horizontal;
@@ -507,7 +616,10 @@ aside .excerciseCard img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .statusAndPerforamnce .batchPerformance {
+  .statusAndPerforamnce .todayStatus {
+    width: 40vw;
+  }
+  .batchPerformance {
     width: 40vw;
   }
 }

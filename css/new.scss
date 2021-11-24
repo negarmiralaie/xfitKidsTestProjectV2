@@ -35,10 +35,14 @@ body {
     // margin-right: auto;
     margin-right: 33.6px;
     margin-left: 33.6px;
+    width: 95%;
 }
 
 nav {
-    width: 77.68vw;
+    width: 100%;
+    padding: 33.6px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     padding: 0.3rem 33.6px;
@@ -237,22 +241,14 @@ aside {
         text-align: center;
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
         border-radius: 25.2px;
-        width: 28vw;
+        // width: 28vw;
         height: 14vh;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
         align-items: center;
-        // justify-content: center;
 
         .counterIcon {
-            // position: absolute;
             margin-left: auto;
             margin-top: auto;
-            // margin-bottom: auto;
-            // align-items: center;
-            // justify-content: center;
-            // background-color: springgreen;
-            // max-height: 100%;
             height: 100%;
 
             img {
@@ -293,16 +289,88 @@ aside {
     display: flex;
     flex-direction: column;
 
+    .todayStatus {
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
+        border-radius: 25.2px;
+        width: 100%;
+        height: 32vh;
+        padding: 33.6px;
+        // this can be a mixin
+        justify-content: space-between;
+        margin-right: 29.4px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 16.8px;
+            line-height: 25px;
+            color: var(--fontDarkGray);
+        }
+
+        .statusCards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            width: 100%;
+
+            .statusCard {
+                background: #F9F9F9;
+                border-radius: 8.4px;
+                display: flex;
+                flex-direction: column;
+                width: 8vw;
+                min-height: 9vh;
+                justify-content: center;
+            }
+
+            .statusCard p:first-child {
+                color: var(--myBlue);
+                font-weight: 800;
+                font-size: 20.16px;
+                line-height: 30px;
+                margin-bottom: 5.88px;
+            }
+
+            .statusCard p:nth-child(2) {
+                font-weight: 600;
+                font-size: 11.76px;
+                line-height: 18px;
+                color: var(--fontDarkGray);
+            }
+        }
+
+        .filthySec {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 29vw;
+            height: 9vh;
+            width: 100%;
+            background: #F9F9F9;
+            border-radius: 8.4px;
+            align-items: center;
+            text-align: center;
+            border: solid 20px var(--myDarkPink);
+            border-right: transparent;
+            border-top: transparent;
+            border-bottom: transparent;
 
 
 
+            .rightFilthy {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 
     .batchPerformance {
         display: flex;
         flex-direction: column;
         text-align: center;
-        // align-items: center;
-        // justify-content: center;
         padding: 37.8px 33.6px 38.64px 33.6px;
         background: var(--myWhite);
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
@@ -328,9 +396,6 @@ aside {
                 margin-top: auto;
                 margin-bottom: auto;
                 margin-left: auto;
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
             }
         }
 
@@ -345,6 +410,7 @@ aside {
                     margin-top: auto;
                     display: flex;
                     align-items: flex-start;
+                    text-align: start;
 
                     section p:first-child {
                         font-weight: 500;
@@ -389,12 +455,14 @@ aside {
     }
 }
 
+
+
 @media (max-width: 1200px) {
 
-    .counterCard:nth-child(n) {
-        width: 95%;
-        // margin-right: auto;
-    }
+    // .counterCard:nth-child(n) {
+    //     width: 95%;
+    //     // margin-right: auto;
+    // }
 
     .counterCard:nth-child(1) {
         margin-right: auto;
@@ -409,10 +477,8 @@ aside {
         display: none;
     }
 
-    .batchPerformance {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+    .batchPerformance{
+        margin-top: 33.6px;
     }
 }
 
@@ -451,27 +517,32 @@ aside {
         flex-direction: row;
 
         .counterCard {
-            width: 24vw;
+            width: 26.28vw;
             margin-top: auto;
             margin-bottom: auto;
         }
 
         .counterCard:nth-child(1) {
             margin-left: 0;
-            margin-right: auto;
+            margin-right: 25.76px;
         }
 
         .counterCard:nth-child(3) {
             margin-right: 0;
             margin-left: auto;
+            margin-left: 24.92px;
         }
     }
 
     .statusAndPerforamnce {
         flex-direction: row;
 
-        .batchPerformance {
+        .todayStatus {
             width: 40vw;
         }
+    }
+
+    .batchPerformance {
+        width: 40vw;
     }
 }
