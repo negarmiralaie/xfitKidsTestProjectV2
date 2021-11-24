@@ -173,6 +173,10 @@ aside {
             }
         }
 
+        .dashboard{
+            color: var(--myBlue);
+        }
+
         li:not(.excerciseCard) {
             margin-left: 1rem;
         }

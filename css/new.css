@@ -206,6 +206,10 @@ aside ul li img {
   height: 20.16px;
 }
 
+aside ul .dashboard {
+  color: var(--myBlue);
+}
+
 aside ul li:not(.excerciseCard) {
   margin-left: 1rem;
 }
