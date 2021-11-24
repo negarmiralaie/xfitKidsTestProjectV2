@@ -58,7 +58,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0.3rem 33.6px;
-  background-color: white;
+  background-color: var(--myWhite);
   font-size: 1.05em;
   font-weight: 700;
   line-height: 1.575em;
@@ -118,7 +118,6 @@ nav .navWrapper .mainNav {
 
 nav .navWrapper .mainNav .toggleIcon,
 nav .navWrapper .mainNav .toggleLogo {
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +142,7 @@ aside {
 
 aside ul {
   list-style: none;
-  color: white;
+  color: var(--myWhite);
   background-color: var(--myBlue);
   border-radius: 31.08px 0 0 31.08px;
   display: -webkit-box;
@@ -250,19 +249,18 @@ aside ul li:first-child {
 
 aside ul .activeAside {
   background-color: var(--bgColor);
-  color: black;
+  color: var(--myWhite);
   border-radius: 100px 0 0 100px;
 }
 
 aside .activeAside {
   color: var(--myBlue);
-  color: red;
 }
 
 aside .excerciseCard {
   width: 165.48px;
   height: 162.96px;
-  background: #FFFFFF;
+  background: var(--myWhite);
   -webkit-box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
   border-radius: 27.72px;
@@ -396,7 +394,7 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
+  background: var(--myWhite);
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
   border-radius: 25.2px;
@@ -620,7 +618,7 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
+  background: var(--myWhite);
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
   border-radius: 25.2px;
@@ -703,7 +701,7 @@ aside .excerciseCard p {
   height: 75.66px;
   left: -12%;
   top: 72%;
-  background: #FFFFFF;
+  background: var(--myWhite);
   -webkit-box-shadow: 0px 3.36px 26.04px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3.36px 26.04px rgba(0, 0, 0, 0.1);
   border-radius: 6.72px;
@@ -759,7 +757,7 @@ aside .excerciseCard p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
+  background: var(--myWhite);
   -webkit-box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
   border-radius: 25.0073px;
@@ -831,7 +829,7 @@ aside .excerciseCard p {
 }
 
 .circularAndPerformer .topPerformer .kidsArticles .kidCard p:nth-child(2n+1) {
-  color: #FFFFFF;
+  color: var(--myWhite);
   font-weight: 700;
   font-size: 15.12px;
   line-height: 23px;
@@ -843,7 +841,7 @@ aside .excerciseCard p {
   font-weight: 500;
   font-size: 10.08px;
   line-height: 15px;
-  color: #ffffff;
+  color: var(--myWhite);
   margin-bottom: 14.28px;
 }
 
@@ -920,7 +918,7 @@ aside .excerciseCard p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: white;
+    background-color: var(--myWhite);
     z-index: 2;
     -webkit-box-align: center;
         -ms-flex-align: center;

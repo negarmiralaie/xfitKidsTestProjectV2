@@ -45,7 +45,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 0.3rem 33.6px;
-    background-color: white;
+    background-color: var(--myWhite);
     font-size: 1.05em;
     font-weight: 700;
     line-height: 1.575em;
@@ -78,8 +78,6 @@ nav {
         }
     }
 
-
-
     .mainNav {
         width: 100%;
         align-items: center;
@@ -94,7 +92,6 @@ nav {
 
             .toggleIcon,
             .toggleLogo {
-                background-color: red;
                 display: flex;
             }
         }
@@ -114,7 +111,7 @@ aside {
 
     ul {
         list-style: none;
-        color: white;
+        color: var(--myWhite);
         background-color: var(--myBlue);
         border-radius: 31.08px 0 0 31.08px;
         display: flex;
@@ -209,20 +206,19 @@ aside {
 
         .activeAside {
             background-color: var(--bgColor);
-            color: black;
+            color: var(--myWhite);
             border-radius: 100px 0 0 100px;
         }
     }
 
     .activeAside {
         color: var(--myBlue);
-        color: red;
     }
 
     .excerciseCard {
         width: 165.48px;
         height: 162.96px;
-        background: #FFFFFF;
+        background: var(--myWhite);
         box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
         border-radius: 27.72px;
         display: flex;
@@ -325,7 +321,7 @@ aside {
     .todayStatus {
         display: flex;
         flex-direction: column;
-        background: #FFFFFF;
+        background: var(--myWhite);
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
         border-radius: 25.2px;
         width: 100%;
@@ -491,7 +487,7 @@ aside {
     .circularGraphSec {
         display: flex;
         flex-direction: column;
-        background: #FFFFFF;
+        background: var(--myWhite);
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
         border-radius: 25.2px;
         width: 100%;
@@ -557,7 +553,7 @@ aside {
                 left: -12%;
                 top: 72%;
 
-                background: #FFFFFF;
+                background: var(--myWhite);
                 box-shadow: 0px 3.36px 26.04px rgba(0, 0, 0, 0.1);
                 border-radius: 6.72px;
                 transform: rotate(-6.69deg);
@@ -603,7 +599,7 @@ aside {
     .topPerformer {
         display: flex;
         flex-direction: column;
-        background: #FFFFFF;
+        background: var(--myWhite);
         box-shadow: 0px 7.5022px 47.5139px rgba(0, 0, 0, 0.04);
         border-radius: 25.0073px;
         width: 100%;
@@ -651,7 +647,7 @@ aside {
             }
 
             .kidCard p:nth-child(2n+1) {
-                color: #FFFFFF;
+                color: var(--myWhite);
                 font-weight: 700;
                 font-size: 15.12px;
                 line-height: 23px;
@@ -663,7 +659,7 @@ aside {
                 font-weight: 500;
                 font-size: 10.08px;
                 line-height: 15px;
-                color: #ffffff;
+                color: var(--myWhite);
                 margin-bottom: 14.28px;
             }
 
@@ -738,7 +734,7 @@ aside {
         width: 75vw;
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--myWhite);
         z-index: 2;
         align-items: center;
         padding: 1rem 1rem;
