@@ -154,11 +154,11 @@ aside {
             }
         }
 
-        li:not(.excerciseCard){
+        li:not(.excerciseCard) {
             margin-left: 1rem;
         }
 
-        li:not(.excerciseCard) img{
+        li:not(.excerciseCard) img {
             margin-left: 12%;
         }
 
@@ -174,7 +174,7 @@ aside {
             .xfitKids {
                 width: 104.16px;
                 height: 17.37px;
-                // margin-right: auto;
+                // margin-right: 50px;
                 margin-left: 0;
             }
         }
@@ -719,6 +719,10 @@ aside {
     aside .excerciseCard {
         display: none;
     }
+    
+    .logo{
+        margin-left: 0;
+    }
 
     .counterCard:nth-child(1) {
         margin-right: auto;
@@ -774,6 +778,14 @@ aside {
         li img {
             margin-right: 0;
             margin-left: 0;
+        }
+
+        .logo{
+            // margin-left: auto;
+        }
+
+        .xfitKids {
+            margin-right: 23%;
         }
     }
 

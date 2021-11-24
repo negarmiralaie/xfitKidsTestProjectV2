@@ -866,6 +866,9 @@ aside .excerciseCard p {
   aside .excerciseCard {
     display: none;
   }
+  .logo {
+    margin-left: 0;
+  }
   .counterCard:nth-child(1) {
     margin-right: auto;
     margin-bottom: 33.6px;
@@ -917,6 +920,9 @@ aside .excerciseCard p {
   aside li img {
     margin-right: 0;
     margin-left: 0;
+  }
+  aside .xfitKids {
+    margin-right: 23%;
   }
   .counter {
     -webkit-box-orient: horizontal;
