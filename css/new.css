@@ -1,9 +1,10 @@
 :root {
-  --myWhite: #FFFFFF;
-  --myBlue: #0F296D;
-  --myGray: #CCCCCC;
+  --myWhite: #ffffff;
+  --myBlue: #0f296d;
+  --myGray: #cccccc;
   --myBlack: #000000;
   --fontGray: #999999;
+  --bgColor: #f3f5fb;
 }
 
 * {
@@ -16,7 +17,228 @@
 }
 
 body {
-  background-color: #F3F5FB;
+  background-color: var(--bgColor);
+}
+
+.WholeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px 0 16px 16px;
+}
+
+.headerBodyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 33.6px;
+  margin-left: 33.6px;
+}
+
+nav {
+  width: 77.68vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.3rem 33.6px;
+  background-color: white;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.575em;
+  line-height: 100%;
+  -webkit-box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 0px 20.16px 20.16px;
+  color: var(--myBlue);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navSearchBar {
+  position: relative;
+}
+
+nav .navSearchBar input[type="search"] {
+  padding: 0.5rem 0 0.5rem 2rem;
+  background-size: 1rem;
+  margin: 0.5rem 0;
+  border: 0.84px solid rgba(204, 204, 204, 0.74);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8.4px;
+}
+
+nav .navSearchBar img {
+  width: 12.6px;
+  height: 12.6px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+nav .navIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 17%;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--myBlue);
+  min-height: 121.82346368715083vh;
+  font-weight: 600;
+  font-size: 15.12px;
+  line-height: 23px;
+}
+
+aside ul {
+  list-style: none;
+  color: white;
+  background-color: var(--myBlue);
+  border-radius: 31.08px 0 0 31.08px;
+}
+
+aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 0;
+  margin-left: 1rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+aside ul li b:nth-child(1) {
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background-color: var(--bgColor);
+}
+
+aside ul li b:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 31.08px;
+  background-color: var(--myBlue);
+}
+
+aside ul li b:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background-color: var(--bgColor);
+}
+
+aside ul li b:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 31.08px;
+  background-color: var(--myBlue);
+}
+
+aside ul li img {
+  width: 20.16px;
+  height: 20.16px;
+  margin-left: 59px;
+}
+
+aside ul .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 18px;
+}
+
+aside ul .logos .xfitKids {
+  width: 104.16px;
+  height: 17.37px;
+  margin-left: 0;
+}
+
+aside ul li:first-child {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+aside ul li:first-child img {
+  width: 42.84px;
+  height: 42.84px;
+}
+
+aside ul li p {
+  display: none;
+}
+
+aside ul li:first-child {
+  padding-bottom: 2rem;
+  border-radius: 0 0 20px 0;
+}
+
+aside ul .activeAside {
+  background-color: var(--bgColor);
+  color: black;
+  border-radius: 100px 0 0 100px;
+}
+
+aside .activeAside {
+  color: var(--myBlue);
+  color: red;
+}
+
+aside .excerciseCard {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: white;
+  margin: auto auto 2rem auto;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 70%;
+  height: 30vh;
+  display: none;
+}
+
+aside .excerciseCard i {
+  margin-left: auto;
+}
+
+aside .excerciseCard img {
+  width: 50%;
+  height: 50%;
+  margin: auto auto;
 }
 
 .counter {
@@ -27,25 +249,39 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin: 33.6px 0;
 }
 
 .counter .counterCard {
-  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #FFFFFF;
+  background: #ffffff;
   text-align: center;
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
   border-radius: 25.2px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 28vw;
+  height: 14vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .counter .counterCard .counterIcon {
   margin-left: auto;
+  margin-top: auto;
+  height: 100%;
+}
+
+.counter .counterCard .counterIcon img {
+  width: 100%;
+  height: 100%;
 }
 
 .counter .counterCard .counterDivider {
@@ -79,12 +315,71 @@ body {
   margin-bottom: auto;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 1200px) {
+  .counterCard:nth-child(n) {
+    width: 100%;
+  }
+  .counterCard:nth-child(1) {
+    margin-right: auto;
+    margin-bottom: 33.6px;
+  }
+  .counterCard:nth-child(3) {
+    margin-top: 33.6px;
+  }
+  .xfitKids {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav h3 {
+    margin-right: auto;
+  }
+  nav .navIcons img {
+    margin-left: 50.32px;
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  aside ul li p,
+  aside .xfitKids {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: 0;
+    margin-left: 4.17%;
+  }
+  aside li img {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .counter {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .counter .counterCard {
+    width: 24vw;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .counter .counterCard:nth-child(1) {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .counter .counterCard:nth-child(3) {
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=new.css.map */
