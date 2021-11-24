@@ -31,8 +31,6 @@ body {
 .headerBodyContainer {
     display: flex;
     flex-direction: column;
-    // margin-left: auto;
-    // margin-right: auto;
     margin-right: 33.6px;
     margin-left: 33.6px;
     width: 95%;
@@ -47,8 +45,6 @@ nav {
     flex-direction: column;
     padding: 0.3rem 33.6px;
     background-color: white;
-    // align-items: center;
-    // justify-content: center;
     font-size: 1.05em;
     font-weight: 700;
     line-height: 1.575em;
@@ -166,15 +162,9 @@ aside {
             display: flex;
             margin-right: 18px;
 
-            .logo {
-                // margin-left: auto;
-                // margin-right: 0;
-            }
-
             .xfitKids {
                 width: 104.16px;
                 height: 17.37px;
-                // margin-right: 50px;
                 margin-left: 0;
             }
         }
@@ -210,10 +200,8 @@ aside {
     }
 
     .excerciseCard {
-        // position: absolute;
         width: 165.48px;
         height: 162.96px;
-        // top: 808.92px;
         background: #FFFFFF;
         box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
         border-radius: 27.72px;
@@ -267,7 +255,6 @@ aside {
         text-align: center;
         box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
         border-radius: 25.2px;
-        // width: 28vw;
         height: 14vh;
         width: 100%;
         align-items: center;
@@ -383,8 +370,6 @@ aside {
             border-right: transparent;
             border-top: transparent;
             border-bottom: transparent;
-
-
 
             .rightFilthy {
                 display: flex;
@@ -540,14 +525,6 @@ aside {
                     line-height: 18px;
                 }
             }
-
-            .childTextSec:nth-child(1) {
-                // margin-bottom: auto;
-            }
-
-            .childTextSec:nth-child(3) {
-                // margin-top: auto;
-            }
         }
 
         .graph {
@@ -557,9 +534,6 @@ aside {
                 position: absolute;
                 width: 149.79px;
                 height: 75.66px;
-                // left: 473.76px;
-                // top: 845.04px;
-                // right: 10%;
                 left: -12%;
                 top: 72%;
 
@@ -705,7 +679,6 @@ aside {
             }
 
             .kidCard img:nth-child(2n) {
-                // background-color: yellow;
                 margin-top: 16.42px;
                 width: 41.16px;
                 height: 41.16px;
@@ -778,10 +751,6 @@ aside {
         li img {
             margin-right: 0;
             margin-left: 0;
-        }
-
-        .logo{
-            // margin-left: auto;
         }
 
         .xfitKids {
