@@ -124,6 +124,13 @@ aside ul {
   color: white;
   background-color: var(--myBlue);
   border-radius: 31.08px 0 0 31.08px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 aside ul li {
@@ -131,7 +138,6 @@ aside ul li {
   display: -ms-flexbox;
   display: flex;
   padding: 0.5rem 0;
-  margin-left: 1rem;
   position: relative;
   padding: 1rem 0;
 }
@@ -177,7 +183,14 @@ aside ul li b:nth-child(2)::before {
 aside ul li img {
   width: 20.16px;
   height: 20.16px;
-  margin-left: 59px;
+}
+
+aside ul li:not(.excerciseCard) {
+  margin-left: 1rem;
+}
+
+aside ul li:not(.excerciseCard) img {
+  margin-left: 12%;
 }
 
 aside ul .logos {
@@ -225,11 +238,8 @@ aside .activeAside {
 }
 
 aside .excerciseCard {
-  position: absolute;
   width: 165.48px;
   height: 162.96px;
-  left: 33.6px;
-  top: 808.92px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 3.36px 52.92px rgba(0, 0, 0, 0.15);
@@ -241,6 +251,9 @@ aside .excerciseCard {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 153.4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 aside .excerciseCard img:nth-child(1) {
@@ -265,8 +278,6 @@ aside .excerciseCard p {
   height: 17.64px;
   top: 75%;
   left: 17%;
-  font-family: Poppins;
-  font-style: normal;
   font-weight: 600;
   font-size: 11.76px;
   line-height: 18px;
@@ -368,7 +379,7 @@ aside .excerciseCard p {
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
   border-radius: 25.2px;
   width: 100%;
-  height: 32vh;
+  min-height: 32vh;
   padding: 33.6px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -479,6 +490,7 @@ aside .excerciseCard p {
   -webkit-box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.04);
   border-radius: 25.2px;
+  min-height: 32vh;
 }
 
 .statusAndPerforamnce .batchPerformance .performanceTextSec {
@@ -591,7 +603,7 @@ aside .excerciseCard p {
           box-shadow: 0px 7.56px 47.88px rgba(0, 0, 0, 0.18);
   border-radius: 25.2px;
   width: 100%;
-  height: 42vh;
+  min-height: 42vh;
   padding: 33.6px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
