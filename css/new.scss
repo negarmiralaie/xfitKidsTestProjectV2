@@ -745,7 +745,7 @@ aside {
         flex-direction: column-reverse;
         align-items: center;
 
-        .graph{
+        .graph {
             margin-bottom: 10px;
         }
 
@@ -761,191 +761,191 @@ aside {
         }
 
     }
+}
 
 
-    @media (max-width: 1200px) {
+@media (max-width: 1200px) {
+
+    .toggleIcon {
+        width: 10px;
+    }
+
+    .toggleLogo {
+        display: flex;
+        margin-right: auto;
+        filter: brightness(0%);
+        padding: 1.5rem 0;
+    }
+
+    .menu {
+        cursor: pointer;
+        display: flex;
+        position: relative;
 
         .toggleIcon {
-            width: 10px;
-        }
-
-        .toggleLogo {
-            display: flex;
-            margin-right: auto;
-            filter: brightness(0%);
-            padding: 1.5rem 0;
-        }
-
-        .menu {
-            cursor: pointer;
-            display: flex;
-            position: relative;
-
-            .toggleIcon {
-                margin-top: auto;
-                margin-bottom: auto;
-            }
-        }
-
-        .menu:hover .mainNav {
-            position: absolute;
-            top: 8vh;
-            right: -3vw;
-            width: 75vw;
-            display: flex;
-            flex-direction: column;
-            background-color: var(--myWhite);
-            z-index: 2;
-            align-items: center;
-            padding: 1rem 1rem;
-            box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
-            border-radius: 20.16px;
-
-            input[type=search] {
-                margin: 1rem 0;
-            }
-
-            .navIcons img:nth-child(1) {
-                margin-right: 5px;
-            }
-
-            .navIcons img:nth-child(2) {
-                margin-left: 5px;
-            }
-        }
-
-        aside .excerciseCard {
-            display: none;
-        }
-
-        .logo {
-            margin-left: 0;
-        }
-
-        .counterCard:nth-child(1) {
-            margin-right: auto;
-            margin-bottom: 33.6px;
-        }
-
-        .counterCard:nth-child(3) {
-            margin-top: 33.6px;
-        }
-
-        .xfitKids {
-            display: none;
-        }
-
-        .batchPerformance {
-            margin-top: 33.6px;
-        }
-
-        .topPerformer {
-            margin-top: 33.6px;
-        }
-
-        .kidCard {
-            width: 20vw;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
 
-    @media (min-width: 1200px) {
+    .menu:hover .mainNav {
+        position: absolute;
+        top: 8vh;
+        right: -3vw;
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--myWhite);
+        z-index: 2;
+        align-items: center;
+        padding: 1rem 1rem;
+        box-shadow: 0px 3.36px 33.6px rgba(0, 0, 0, 0.06);
+        border-radius: 20.16px;
 
-        nav {
-            flex-direction: row;
-
-            h3 {
-                margin-right: auto;
-            }
-
-            .navIcons img {
-                margin-left: 50.32px;
-            }
-
-            .navWrapper {
-                display: flex;
-                height: 10vh;
-
-                .menu {
-                    width: 100%;
-
-                    .mainNav {
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                .toggleIcon,
-                .toggleLogo {
-                    display: none;
-                }
-            }
+        input[type=search] {
+            margin: 1rem 0;
         }
 
-        aside {
+        .navIcons img:nth-child(1) {
+            margin-right: 5px;
+        }
+
+        .navIcons img:nth-child(2) {
+            margin-left: 5px;
+        }
+    }
+
+    aside .excerciseCard {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .counterCard:nth-child(1) {
+        margin-right: auto;
+        margin-bottom: 33.6px;
+    }
+
+    .counterCard:nth-child(3) {
+        margin-top: 33.6px;
+    }
+
+    .xfitKids {
+        display: none;
+    }
+
+    .batchPerformance {
+        margin-top: 33.6px;
+    }
+
+    .topPerformer {
+        margin-top: 33.6px;
+    }
+
+    .kidCard {
+        width: 20vw;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    nav {
+        flex-direction: row;
+
+        h3 {
+            margin-right: auto;
+        }
+
+        .navIcons img {
+            margin-left: 50.32px;
+        }
+
+        .navWrapper {
             display: flex;
+            height: 10vh;
 
-            ul li p,
-            .xfitKids {
-                display: flex;
-                margin-right: auto;
-                margin-left: 0;
-                margin-left: 4.17%;
+            .menu {
+                width: 100%;
+
+                .mainNav {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
-            li img {
-                margin-right: 0;
-                margin-left: 0;
-            }
-
-            .xfitKids {
-                margin-right: 23%;
-            }
-        }
-
-        .counter {
-            flex-direction: row;
-
-            .counterCard {
-                width: 26.28vw;
-                margin-top: auto;
-                margin-bottom: auto;
-            }
-
-            .counterCard:nth-child(1) {
-                margin-left: 0;
-                margin-right: 25.76px;
-            }
-
-            .counterCard:nth-child(3) {
-                margin-right: 0;
-                margin-left: auto;
-                margin-left: 24.92px;
+            .toggleIcon,
+            .toggleLogo {
+                display: none;
             }
         }
+    }
 
-        .statusAndPerforamnce {
-            flex-direction: row;
+    aside {
+        display: flex;
 
-            .todayStatus {
-                width: 40vw;
-            }
+        ul li p,
+        .xfitKids {
+            display: flex;
+            margin-right: auto;
+            margin-left: 0;
+            margin-left: 4.17%;
         }
 
-        .batchPerformance {
+        li img {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .xfitKids {
+            margin-right: 23%;
+        }
+    }
+
+    .counter {
+        flex-direction: row;
+
+        .counterCard {
+            width: 26.28vw;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .counterCard:nth-child(1) {
+            margin-left: 0;
+            margin-right: 25.76px;
+        }
+
+        .counterCard:nth-child(3) {
+            margin-right: 0;
+            margin-left: auto;
+            margin-left: 24.92px;
+        }
+    }
+
+    .statusAndPerforamnce {
+        flex-direction: row;
+
+        .todayStatus {
             width: 40vw;
         }
+    }
 
-        .kidCard {
-            width: 10vw;
-        }
+    .batchPerformance {
+        width: 40vw;
+    }
 
-        .circularAndPerformer {
-            flex-direction: row;
-        }
+    .kidCard {
+        width: 10vw;
+    }
 
-        .excerciseCard {
-            display: flex;
-        }
+    .circularAndPerformer {
+        flex-direction: row;
+    }
+
+    .excerciseCard {
+        display: flex;
     }
 }

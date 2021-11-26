@@ -968,7 +968,7 @@ aside .excerciseCard p {
   }
 }
 
-@media (max-width: 600px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .toggleIcon {
     width: 10px;
   }
@@ -1050,7 +1050,7 @@ aside .excerciseCard p {
   }
 }
 
-@media (max-width: 600px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
